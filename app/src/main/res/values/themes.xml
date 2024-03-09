@@ -1,0 +1,33 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NotesAppAdvance" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#64B5F6</item>
+        <item name="colorPrimaryVariant">#2196F3</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#64B5F6</item>
+        <item name="colorSecondaryVariant">#2196F3</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="Theme.NotesAppAdvance" parent="Base.Theme.NotesAppAdvance" />
+
+    <style name="NoActionBar" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- styles.xml or themes.xml -->
+    <style name="Theme.MyApp.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/bg_splashscreen</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_notes</item>
+        <item name="postSplashScreenTheme">@style/Theme.NotesAppAdvance</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+    </style>
+
+</resources>
